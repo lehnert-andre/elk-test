@@ -21,7 +21,7 @@ roles:
   - remote_cluster_client
   - transform
 
-replicas: 2
+replicas: 1
 minimumMasterNodes: 1
 
 esMajorVersion: ""
@@ -78,11 +78,11 @@ esJavaOpts: "" # example: "-Xmx1g -Xms1g"
 
 resources:
   requests:
-    cpu: "1000m"
-    memory: "1Gi"
+    cpu: "500m"
+    memory: "0.5Gi"
   limits:
     cpu: "1000m"
-    memory: "2Gi"
+    memory: "1Gi"
 
 initResources: {}
   # limits:
